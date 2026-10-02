@@ -32,12 +32,13 @@ import {
   X,
   Zap,
 } from "lucide-react";
-import portrait from "../src/assets/mir-hamza-portrait.jpeg";
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
+const portrait = new URL("../src/assets/mir-hamza-portrait.jpeg", import.meta.url).href;
 const PortfolioScene = lazy(() => import("@/components/PortfolioScene"));
 
 gsap.registerPlugin(ScrollTrigger);
