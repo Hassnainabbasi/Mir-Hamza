@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cinzel", serif;
+  --font-heading: "Syne", sans-serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --color-primary: #d4b768;
+  --color-gold-bright: #ebd28d;
+  --color-cyan: #2bd8e5;
+  --color-surface: #111116;
+  --color-background: #0a0a0c;
+  --color-foreground: #f4f4ec;
+  --color-card: #121217;
+  --color-card-hover: #181822;
+  --color-border: rgba(255, 255, 255, 0.12);
+  --color-muted: #1c1c24;
+  --color-muted-foreground: #9a9aa8;
+}
+
+:root {
+  --background: #0a0a0c;
+  --foreground: #f4f4ec;
+  --card: #121217;
+  --primary: #d4b768;
+  --cyan: #2bd8e5;
+}
+
+html { scroll-behavior: smooth; background: #0a0a0c; }
+body { margin: 0; background: #0a0a0c; color: #f4f4ec; font-family: 'Plus Jakarta Sans', sans-serif; }
+::selection { background: rgba(212, 183, 104, 0.4); color: #fff; }
+
+.text-outline { color: transparent; -webkit-text-stroke: 1px rgba(244, 244, 236, 0.5); }
+.hero-grid { background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px); background-size: 72px 72px; mask-image: linear-gradient(to bottom, black, transparent 92%); }
+.contact-grid { background-image: radial-gradient(circle at 1px 1px, rgba(43, 216, 229, 0.25) 1px, transparent 0); background-size: 26px 26px; }
+.cursor-glow { background: radial-gradient(circle, rgba(43, 216, 229, 0.35), transparent 68%); }
+.bg-gradient-luxury { background: linear-gradient(90deg, #d4b768, #2bd8e5); }
+.bg-portrait-overlay { background: linear-gradient(to top, #0a0a0c 0%, transparent 45%), linear-gradient(115deg, rgba(212, 183, 104, 0.12), transparent 38%, rgba(43, 216, 229, 0.12)); }
+.nav-link { position: relative; }
+.nav-link::after { content: ""; position: absolute; left: 0; right: 0; bottom: -8px; height: 1px; transform: scaleX(0); transform-origin: right; background: #d4b768; transition: transform .3s ease; }
+.nav-link:hover::after { transform: scaleX(1); transform-origin: left; }
